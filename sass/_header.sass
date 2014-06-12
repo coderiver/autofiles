@@ -1,0 +1,124 @@
+=roman
+	font-family: "helveticaneuecyr-roman", Arial, sans-serif
+
+=light
+	font-family: "helveticaneuecyr-light", Arial, sans-serif
+	
+=bold
+	font-family: "helveticaneuecyr-bold", Arial, sans-serif
+
+$blue: #2fa4e7
+$darkblue: #2D7CAA
+$gray: #e3e3e3
+
+=borrad
+	-webkit-border-radius: 3px 
+	border-radius: 3px 
+
+header
+	+clr
+	padding: 0 30px
+	line-height: 95px 
+
+.logo
+	display: block 
+	float: left
+	+roman
+	+fs(48)
+	text-decoration: none
+	margin-right: 149px  
+	& span
+		color: $blue
+
+.search
+	float: left
+	position: relative
+	+box
+	input
+		font-style: italic
+		width: 500px
+		border: 1px solid #e5e5e5
+		+borrad
+		padding: 0 25px
+		padding-right: 105px
+		line-height: 36px
+		+box
+		+placeholder-color($gray)
+
+.btn
+	+g(#2fa4e7, #44ade9)
+	-webkit-box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.3) inset
+	box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.3) inset
+	border: 1px solid #3084b6
+	+bold
+	color: #FFF
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+	+borrad
+	+transition(0.2s linear)
+	&:hover
+		background: $darkblue
+		-webkit-box-shadow: none 
+		box-shadow: none 
+	
+.btn_search
+	position: absolute
+	top: 28px
+	right: 0
+	width: 90px
+	height: 38px
+	+borrad
+	&:before
+		content: ""
+		position: absolute
+		top: 6px
+		left: 32px
+		+s(search)
+
+.join, .sign-in
+	float: right
+	text-decoration: none
+	+light
+	+fs(18)
+	
+.join
+	color: $blue
+	padding-left: 25px
+	margin-right: 36px 
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 37px
+		left: 0
+		+s(join) 
+
+.nav-list
+	+g(#2fa4e7, #44ade9)
+	border: 1px solid #3084b6
+	+borrad  
+	font-size: 0
+	margin: 0 30px
+	+box
+	li
+		+fs(14)
+		display: inline-block
+		line-height: 36px
+		padding: 0 20px
+		border-left: 1px solid rgba(255, 255, 255, 0.3)
+		border-right: 1px solid #328bbf
+		+transition(0.2s linear)
+		&:first-child
+			border-left: 1px solid transparent
+		&:last-child
+			border-right: 1px solid transparent
+		&:hover
+			background: $darkblue
+			border-left: 1px solid transparent
+			border-right: 1px solid transparent
+		a
+			color: #FFF 
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+	.is-active
+		background: $darkblue
+		border-left: 1px solid transparent
+		border-right: 1px solid transparent

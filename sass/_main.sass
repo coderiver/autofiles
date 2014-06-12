@@ -1,2 +1,100 @@
 // Normally mainpage styles
- 
+=roman
+	font-family: "helveticaneuecyr-roman", Arial, sans-serif
+
+=light
+	font-family: "helveticaneuecyr-light", Arial, sans-serif
+	
+=bold
+	font-family: "helveticaneuecyr-bold", Arial, sans-serif
+
+$blue: #2fa4e7
+$darkblue: #2D7CAA
+$gray: #e3e3e3
+
+=borrad
+	-webkit-border-radius: 3px 
+	border-radius: 3px 
+
+.section-name
+	+bold
+	+fs(18)
+	color: $blue
+
+.all-makes 
+	margin-top: 35px
+	caption
+		text-align: left
+		margin-bottom: 24px
+	td
+		width: 16.667% 
+		line-height: 2.15
+		+fs(14)
+
+.options
+	margin-top: 35px 
+	.options__block
+		background: #f5f5f5
+		border: 1px solid $gray
+		+borrad
+		padding: 5px 20px
+		margin-top: 12px
+		
+	.options__item
+		display: inline-block
+		margin-right: 25px
+		select
+			padding: 3px 10px 
+			width: 120px 
+			color: #4D4D4D 
+		strong
+			display: inline-block
+			+fs(14)
+		form
+			display: inline-block
+			margin-left: 18px
+			
+	.btn_options
+		position: relative
+		top: 2px
+		float: right  
+		width: 70px
+		height: 24px
+
+.parts
+	margin-top: 45px
+
+.parts__block
+	display: inline-block
+	vertical-align: top 
+	width: 33%
+	min-width: 150px
+	margin-top: 32px
+	h2
+		margin-top: 12px
+		margin-bottom: 5px
+		line-height: 1.2  
+		a
+			color: $blue
+			font-weight: bold 
+			+fs(14)
+
+	.parts__image
+		width: 118px 
+		height: 118px
+		border: 1px solid $gray
+		font-size: 0 
+		img
+			max-width: 100%
+	li
+		line-height: 1.7
+		
+	.btn_more
+		display: inline-block
+		text-align: center
+		position: relative
+		width: 31px 
+		height: 22px
+		margin-left: 8px 
+		
+		

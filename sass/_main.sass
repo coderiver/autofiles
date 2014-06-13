@@ -16,6 +16,8 @@ $gray: #e3e3e3
 	-webkit-border-radius: 3px 
 	border-radius: 3px 
 
+
+// LEFT COLUMN
 .section-name
 	+bold
 	+fs(18)
@@ -63,6 +65,8 @@ $gray: #e3e3e3
 
 .parts
 	margin-top: 45px
+	padding-bottom: 40px 
+	border-bottom: 1px solid $gray
 
 .parts__block
 	display: inline-block
@@ -70,10 +74,11 @@ $gray: #e3e3e3
 	width: 33%
 	min-width: 150px
 	margin-top: 32px
+	margin-bottom: 6px 
 	h2
 		margin-top: 12px
-		margin-bottom: 5px
-		line-height: 1.2  
+		margin-bottom: 6px
+		line-height: 1.1  
 		a
 			color: $blue
 			font-weight: bold 
@@ -97,4 +102,132 @@ $gray: #e3e3e3
 		height: 22px
 		margin-left: 8px 
 		
-		
+.most-visited
+	margin-top: 45px
+	caption
+		text-align: left
+		margin-bottom: 27px
+	td
+		width: 33%
+		line-height: 2
+
+.banner-hor
+	margin-top: 42px
+	font-size: 0
+	text-align: center
+	// width: 100% 
+	// height: 90px
+	
+.reviews
+	margin-top: 45px 
+	
+.news
+	margin-top: 45px
+
+// RIGHT COLUMN
+.banner-ver
+	margin-top: 76px
+	margin-bottom: 40px 
+	font-size: 0
+	text-align: center
+	// width: 100%
+	// height: 600px 
+
+.right-block
+	margin-bottom: 50px 
+	padding: 14px 20px 
+	border: 1px solid $gray
+	+borrad
+
+.right-block__specs-list
+	margin-top: 20px
+	li
+		padding-left: 69px 
+		line-height: 3
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+	.speed:before
+		+s(speed)
+		left: 8px
+		top: 3px
+	.engine:before
+		+s(engine)
+		left: 4px
+		top: 3px
+	.horsepower:before
+		+s(horsepower)
+		left: 4px
+		top: 6px
+	.gas:before
+		+s(gas)
+		left: 10px
+		top: 7px
+	.towing:before
+		+s(towing)
+		left: 4px
+		top: 3px
+	.length:before
+		+s(length)
+		left: 9px
+		top: 3px
+	.wheelbase:before
+		+s(wheelbase)
+		left: -1px
+		top: 4px
+	.clearance:before
+		+s(clearance)
+		left: 4px
+		top: -3px
+	.weight:before
+		+s(weight)
+		left: 8px
+		top: 1px
+	.cargo:before
+		+s(cargo)
+		left: 2px
+		top: -6px	
+
+.right-block__image
+	display: inline-block
+	vertical-align: middle 
+	width: 92px
+	height: 110px
+	margin-top: 20px
+	img
+		width: 100% 
+
+.right-block__tires-list
+	display: inline-block
+	vertical-align: middle
+	margin-left: 37px
+	margin-top: 20px
+	li
+		line-height: 2
+
+.right-block__wallpaper-list
+	margin-top: 24px 
+	li
+		line-height: 2 
+
+
+
+// FOOTER
+footer
+	margin: 0 30px 
+	margin-top: 50px //1063px
+	border-top: 1px solid $gray
+	+clr
+	.footer__info
+		float: left
+		width: 50%
+		line-height: 67px
+		a
+			color: $blue
+			margin-right: 15px 
+	.footer__copyright
+		float: right
+		width: 50%
+		text-align: right
+		line-height: 67px

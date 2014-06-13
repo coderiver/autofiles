@@ -27,8 +27,11 @@ header
 	+fs(48)
 	text-decoration: none
 	margin-right: 149px  
-	& span
+	span
 		color: $blue
+	&:hover
+		color: #4D4D4D
+
 
 .search
 	float: left
@@ -39,9 +42,8 @@ header
 		width: 500px
 		border: 1px solid #e5e5e5
 		+borrad
-		padding: 0 25px
+		padding: 11px 25px
 		padding-right: 105px
-		line-height: 36px
 		+box
 		+placeholder-color($gray)
 
@@ -58,20 +60,20 @@ header
 	&:hover
 		background: $darkblue
 		-webkit-box-shadow: none 
-		box-shadow: none 
+		box-shadow: none
 	
 .btn_search
 	position: absolute
-	top: 28px
+	top: 27px
 	right: 0
 	width: 90px
-	height: 38px
+	height: 39px
 	+borrad
 	&:before
 		content: ""
 		position: absolute
-		top: 6px
-		left: 32px
+		top: 7px
+		left: 33px
 		+s(search)
 
 .join, .sign-in

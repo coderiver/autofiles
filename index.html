@@ -19,17 +19,17 @@
 	<a href="#" class="join">Join</a>
 </header>
 <!-- BEGIN NAV -->
-<nav>
-	<ul class="nav-list">
-		<li><a href="#">Home</a></li>
+<menu>
+	<ul class="menu-list">
+		<li class="is-active"><a href="#">Home</a></li>
 		<li><a href="#">All cars</a></li>
-		<li class="is-active"><a href="#">Cars specs</a></li>
+		<li><a href="#">Cars specs</a></li>
 		<li><a href="#">Store</a></li>
 		<li><a href="#">Tires</a></li>
 		<li><a href="#">Media</a></li>
 		<li></li>
 	</ul>
-</nav>
+</menu>
 <!-- BEGIN MAIN -->
 <main class="l">
 	<div class="l-col1">
@@ -332,10 +332,80 @@
 		<!-- section 5 -->
 		<section class="reviews">
 			<h2 class="section-name">Car reviews</h2>
+			<ul class="reviews__tabs">
+				<li class="is-active">
+					<a href="#">Expert reviews</a>
+				</li>
+				<li><a href="#">Video reviews</a></li>
+				<li><a href="#">Consumer reviews</a></li>
+			</ul>
+			<div class="reviews__container">
+				<div class="reviews__block">
+					<div class="reviews__image">
+						<a href="#"><img src="img/reviews.jpg"></a>
+					</div>
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+					<p>The concept that wowed crowds at the 2009
+					Detroit auto show is now beautiful production
+					car.</p>
+				</div>
+				<div class="reviews__block">
+					<div class="reviews__image">
+						<a href="#"><img src="img/reviews.jpg"></a>
+					</div>
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+					<p>The concept that wowed crowds at the 2009
+					Detroit auto show is now beautiful production
+					car.</p>
+				</div>
+				<div class="reviews__block">
+					<div class="reviews__image">
+						<a href="#"><img src="img/reviews.jpg"></a>
+					</div>
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+					<p>The concept that wowed crowds at the 2009
+					Detroit auto show is now beautiful production
+					car.</p>
+				</div>
+				<a href="#" class="btn btn_reviews">More reviews</a>
+			</div>
 		</section>
 		<!-- section 6 -->
 		<section class="news">
 			<h2 class="section-name">Automotive news</h2>
+			<div class="news__container">
+				<ul class="news__list">
+					<li class="is-active">
+						<div class="news__image">
+							<a href="#"><img src="img/reviews.jpg"></a>
+						</div>
+						<p class="news__date">Jun 04th, 2014</p>
+						<h3><a href="#">2014 Cadillac ELR</a></h3>
+						<p>The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car. The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car. The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car.</p>
+					</li>
+					<li>
+						<p class="news__date">Jun 04th, 2014</p>
+						<h3><a href="#">The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car.</a></h3>
+					</li>
+					<li>
+						<p class="news__date">Jun 04th, 2014</p>
+						<h3><a href="#">The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car.</a></h3>
+					</li>
+					<li>
+						<p class="news__date">Jun 04th, 2014</p>
+						<h3><a href="#">The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car.</a></h3>
+					</li>
+					<li>
+						<p class="news__date">Jun 04th, 2014</p>
+						<h3><a href="#">The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car.</a></h3>
+					</li>
+					<li>
+						<p class="news__date">Jun 04th, 2014</p>
+						<h3><a href="#">The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car.</a></h3>
+					</li>
+				</ul>
+				<a href="#" class="btn btn_news">More news</a>
+			</div>
 		</section>
 	</div>
 	<div class="l-col2">
@@ -397,7 +467,7 @@
 		<a href="#">Support</a>
 	</section>
 	<section class="footer__copyright">
-		&copy 2014 AvtoFiles. All Rights Reserved.
+		&copy 2014 AutoFiles. All Rights Reserved.
 	</section>
 </footer>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>

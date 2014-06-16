@@ -26,23 +26,26 @@ header
 	+roman
 	+fs(48)
 	text-decoration: none
-	margin-right: 149px  
+	margin-right: 12.416666666%  
 	span
 		color: $blue
 	&:hover
 		color: #4D4D4D
-
+	+r1090
+		margin-right: 5% 
 
 .search
 	float: left
 	position: relative
 	+box
+	+r980
+		clear: left
 	input
 		font-style: italic
 		width: 500px
 		border: 1px solid #e5e5e5
 		+borrad
-		padding: 11px 25px
+		padding: 10px 25px
 		padding-right: 105px
 		+box
 		+placeholder-color($gray)
@@ -56,18 +59,19 @@ header
 	color: #FFF
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
 	+borrad
-	+transition(0.2s linear)
+	+transition(background 0.2s linear)
 	&:hover
 		background: $darkblue
 		-webkit-box-shadow: none 
 		box-shadow: none
+		color: #FFF 
 	
 .btn_search
 	position: absolute
-	top: 27px
+	top: 28px
 	right: 0
 	width: 90px
-	height: 39px
+	height: 38px
 	+borrad
 	&:before
 		content: ""
@@ -77,15 +81,18 @@ header
 		+s(search)
 
 .join, .sign-in
+	display: block
 	float: right
 	text-decoration: none
 	+light
 	+fs(18)
+	// +r980
+	// 	clear: left 
 	
 .join
 	color: $blue
 	padding-left: 25px
-	margin-right: 36px 
+	margin-right: 3% 
 	position: relative
 	&:before
 		content: ""
@@ -94,7 +101,7 @@ header
 		left: 0
 		+s(join) 
 
-.nav-list
+.menu-list
 	+g(#2fa4e7, #44ade9)
 	border: 1px solid #3084b6
 	+borrad  
@@ -104,8 +111,6 @@ header
 	li
 		+fs(14)
 		display: inline-block
-		line-height: 36px
-		padding: 0 20px
 		border-left: 1px solid rgba(255, 255, 255, 0.3)
 		border-right: 1px solid #328bbf
 		+transition(0.2s linear)
@@ -118,6 +123,9 @@ header
 			border-left: 1px solid transparent
 			border-right: 1px solid transparent
 		a
+			display: block
+			padding: 0 20px
+			line-height: 36px
 			color: #FFF 
 			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
 	.is-active

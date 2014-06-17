@@ -25,14 +25,20 @@ $gray: #e3e3e3
 
 .all-makes 
 	margin-top: 35px
-	caption
+	+clr
+	caption,h2
 		text-align: left
 		margin-bottom: 24px
-	td
+	td,ul
 		width: 16.667% 
 		line-height: 2.15
 		+fs(14)
 
+	li
+	ul
+		list-style: none
+		float: left
+		
 .options
 	margin-top: 35px 
 	.options__block

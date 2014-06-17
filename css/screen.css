@@ -73,9 +73,11 @@ header:after { content: " "; display: table; clear: both; }
 
 .section-name { font-family: "helveticaneuecyr-bold", Arial, sans-serif; font-size: 18px; font-size: 1.8rem; color: #2fa4e7; }
 
-.all-makes { margin-top: 35px; }
-.all-makes caption { text-align: left; margin-bottom: 24px; }
-.all-makes td { width: 16.667%; line-height: 2.15; font-size: 14px; font-size: 1.4rem; }
+.all-makes { margin-top: 35px; *zoom: 1; }
+.all-makes:after { content: " "; display: table; clear: both; }
+.all-makes caption, .all-makes h2 { text-align: left; margin-bottom: 24px; }
+.all-makes td, .all-makes ul { width: 16.667%; line-height: 2.15; font-size: 14px; font-size: 1.4rem; }
+.all-makes ul { list-style: none; float: left; }
 
 .options { margin-top: 35px; }
 .options .options__block { background: whitesmoke; border: 1px solid #e3e3e3; -webkit-border-radius: 3px; border-radius: 3px; padding: 5px 20px; margin-top: 12px; }

@@ -199,7 +199,7 @@ $gray: #e3e3e3
 	.news__container
 		margin-top: 32px
 		padding: 25px
-		padding-top: 15px 
+		padding-top: 20px 
 		border: 1px solid $gray
 		+borrad
 		+clr
@@ -242,6 +242,136 @@ $gray: #e3e3e3
 		font-family: Arial
 		font-weight: bold
 	
+.make
+	margin-top: 35px
+	+clr
+	.make__logo
+		font-size: 0
+		margin-top: 35px 
+		float: left
+		margin-right: 30px
+		width: 150px
+		img
+			max-width: 100% 
+		
+	.make__history
+		margin-top: 32px
+		p
+			margin-bottom: 10px
+			
+	.make__vehicle
+		margin-top: 45px 
+		&>li
+			padding: 11px 17px
+			margin-bottom: 8px 
+			border: 1px solid $gray
+			+borrad
+			+clr
+			&:last-child
+				margin-bottom: 0 
+
+	.make__vehicle-image
+		float: left
+		font-size: 0 
+		width: 150px
+		margin-right: 21px 
+		img
+			max-width: 100% 
+
+	h3
+		margin-top: 7px
+		a
+			color: $blue 
+	
+	.make__vehicle-specs
+		margin-top: 8px 
+		li
+			display: inline-block
+			line-height: 1
+			margin-right: 10px
+			padding-right: 10px 
+			border-right: 1px solid #4d4d4d
+			&:last-child
+				border: none
+				padding-right: 0
+				margin-right: 0  
+	.make__vehicle-years
+		margin-top: 10px 
+		li
+			display: inline-block
+			margin-right: 5px  
+			a
+				text-decoration: underline
+				
+.model
+	margin-top: 35px
+	.model__about
+		margin-top: 29px 
+		margin-bottom: 42px
+		line-height: 1.2
+	h3
+		color: $blue
+	.model__specs
+		margin-top: 15px
+		margin-bottom: 27px 
+		+clr
+	.model__specs-image
+		float: left
+		width: 150px
+		font-size: 0
+		margin-right: 5.5%
+		padding: 10px 0
+		img
+			max-width: 100%  
+	.model__specs-table
+		width: 60%
+		td
+			width: 33.33%
+			line-height: 2 
+	.model__block
+		display: inline-block
+		padding-top: 40px 
+		border: 1px solid $gray
+		+borrad
+		+box
+		width: 158px
+		height: 158px
+		margin-right: 17px
+		margin-top: 16px  
+		position: relative
+		text-align: center
+		overflow: hidden
+		font-size: 0
+		&:hover
+			color: #4d4d4d
+			// +transform(scale(1.05))
+			-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2) 
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+			+transition(0.2s linear)
+		&:nth-child(5n)
+			margin-right: 0  
+		span
+			+fs(18)
+			font-weight: bold
+			position: absolute
+			top: 15px
+			left: 50%
+			margin-left: -20px
+		img
+			max-width: 100%
+			max-width: 100%
+			
+.all-models
+	margin-top: 40px
+	p
+		margin-top: 25px
+		line-height: 2
+		padding-bottom: 42px
+		border-bottom: 1px solid $gray
+
+.all-models + .all-makes
+	margin-top: 45px 
+
 
 // RIGHT COLUMN
 .banner-ver
@@ -255,10 +385,12 @@ $gray: #e3e3e3
 	// height: 600px 
 
 .right-block
-	margin-bottom: 50px 
+	margin-bottom: 40px 
 	padding: 14px 20px 
 	border: 1px solid $gray
 	+borrad
+	&:last-child
+		margin-bottom: 0 
 
 .right-block__specs-list
 	margin-top: 20px
@@ -332,7 +464,29 @@ $gray: #e3e3e3
 	li
 		line-height: 2 
 
-
+.find-dealer
+	line-height: 2.5
+	margin-top: 11px
+	padding-bottom: 10px
+	border-bottom: 1px solid $gray
+	&+ a
+		display: block 
+		color: $blue
+		margin-top: 4px
+		margin-bottom: -8px 
+		 
+	+clr
+	input.zipcode
+		border: 1px solid $gray
+		+borrad
+		width: 40px
+		color: #4d4d4d
+		padding: 2px
+		margin-left: 7px 
+	button
+		float: right
+		line-height: 2.15
+		padding: 0 8px  
 
 // FOOTER
 footer

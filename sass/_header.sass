@@ -52,7 +52,8 @@ header
 		+placeholder-color($gray)
 
 .btn
-	+g(#2fa4e7, #44ade9)
+	// +g(#2fa4e7, #44ade9)
+	background: $blue 
 	-webkit-box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.3) inset
 	box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.3) inset
 	border: 1px solid #3084b6
@@ -60,12 +61,14 @@ header
 	color: #FFF
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
 	+borrad
-	+transition(background 0.2s linear)
+	+transition(background 0.2s linear) 
 	&:hover
 		background: $darkblue
 		-webkit-box-shadow: none 
 		box-shadow: none
-		color: #FFF 
+		color: #FFF
+	&:active
+		+transform(translateY(1px))
 	
 .btn_search
 	position: absolute

@@ -30,7 +30,7 @@ $gray: #e3e3e3
 		text-align: left
 		margin-bottom: 24px
 	td,ul
-		width: 16.667% 
+		width: 16.666% 
 		line-height: 2.15
 		+fs(14)
 
@@ -39,6 +39,13 @@ $gray: #e3e3e3
 		list-style: none
 		float: left
 		
+.seo-text
+	margin-top: 35px 
+	h3
+		margin-bottom: 20px 
+	p
+		margin-bottom: 1em 
+
 .options
 	margin-top: 35px 
 	.options__block
@@ -64,7 +71,7 @@ $gray: #e3e3e3
 			
 	.btn_options
 		position: relative
-		top: 2px
+		top: 3px
 		float: right  
 		width: 70px
 		height: 24px
@@ -146,6 +153,7 @@ $gray: #e3e3e3
 			-webkit-border-top-right-radius: 3px 
 			border-top-right-radius: 3px
 			+box
+			position: relative
 			a
 				display: block
 				+fs(14)
@@ -159,6 +167,16 @@ $gray: #e3e3e3
 				border-bottom: 1px solid #FFF
 				a
 					color: #4D4D4D
+					cursor: default
+				&:after
+					content: "" 
+					height: 1px 
+					width: 100% 
+					background: #FFF
+					display: block
+					position: absolute
+					bottom: -1px
+					z-index: 2 
 					
 	.reviews__container
 		border: 1px solid $gray
@@ -171,6 +189,7 @@ $gray: #e3e3e3
 
 	.reviews__block
 		display: inline-block
+		vertical-align: top 
 		width: 33% 
 		padding: 10px
 		+box
@@ -300,7 +319,8 @@ $gray: #e3e3e3
 			&:last-child
 				border: none
 				padding-right: 0
-				margin-right: 0  
+				margin-right: 0
+				 
 	.make__vehicle-years
 		margin-top: 10px 
 		li
@@ -311,16 +331,20 @@ $gray: #e3e3e3
 				
 .model
 	margin-top: 35px
+	
 	.model__about
 		margin-top: 29px 
 		margin-bottom: 42px
 		line-height: 1.2
+	
 	h3
 		color: $blue
+		
 	.model__specs
 		margin-top: 15px
 		margin-bottom: 27px 
 		+clr
+
 	.model__specs-image
 		float: left
 		width: 150px
@@ -328,12 +352,17 @@ $gray: #e3e3e3
 		margin-right: 5.5%
 		padding: 10px 0
 		img
-			max-width: 100%  
+			max-width: 100% 
+			 
 	.model__specs-table
 		width: 60%
 		td
 			width: 33.33%
 			line-height: 2 
+			
+	.model__block-box
+		margin-right: -17px 
+		
 	.model__block
 		display: inline-block
 		padding-top: 40px 
@@ -354,8 +383,7 @@ $gray: #e3e3e3
 			-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2) 
 			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
 			+transition(0.2s linear)
-		&:nth-child(5n)
-			margin-right: 0  
+			  
 		span
 			+fs(18)
 			font-weight: bold
@@ -363,6 +391,7 @@ $gray: #e3e3e3
 			top: 15px
 			left: 50%
 			margin-left: -20px
+			
 		img
 			max-width: 100%
 			max-width: 100%
@@ -492,7 +521,9 @@ $gray: #e3e3e3
 	button
 		float: right
 		line-height: 2.15
-		padding: 0 8px  
+		padding: 0 8px
+		+r1090
+			float: none  
 
 // FOOTER
 footer

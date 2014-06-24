@@ -35,9 +35,7 @@
 	<div class="l-col1">
 		<!-- section 1 -->
 		<section class="all-makes">
-			<h2 class="section-name">All makes</h2>
-
-				
+			<h2 class="section-name">All makes</h2>				
 				<ul>
 					<li><a href="#">ACURA</a></li>
 					<li><a href="#">Chevrolet</a></li>
@@ -114,9 +112,23 @@
 					<li><a href="#">Honda</a></li>
 					<li><a href="#">ACURA</a></li>
 					<li><a href="#">Chevrolet</a></li>
-				
-				</ul>
-					
+				</ul>		
+		</section>
+		<section class="seo-text">
+			<h3>Discovering your car’s secrets!</h3>
+			<p>Autofiles.com guides you through the wide range of cars in the world.
+			<p>The world’s auto market comprises more than 60 basic makes with hundreds of models and trims appearing every year.</p>
+			<p>No wonder that at times it is quite difficult to select the auto meeting all your criteria or find a specific detail fitting exactly into your car model.</p>
+			<p>Autofiles.com helps you choose from the variety of options providing tools to compare different makes, models and trims by years, price or body style.
+			<p>Browse through the list of car makes, choose your model, a desired trim and body style and we will provide you with an extensive data on your car technical specifications and features, 0-60 mph results and other bits you never knew about your auto.</p>
+			<p>You can always narrow your search with a solid number of important features like transmission base, fuel type, gas mileage, drive type, torque, horsepower, safety, etc.</p>
+			<p>Another exciting rating tool is the 0-60 mph comparison. Find out how fast your car can reach the speed of 60 miles per hour in comparison to other autos. That’s really interesting! Watch the 0-60 mph videos and try to race one day by yourself.</p>
+			<p>And, of course, you want the best car for less money. Prices for autos vary a lot these days. When buying a car you can only see dealer’s prices but in reality you also have to take into account the cost of ownership, service and maintenance of your auto. Probably, in long term perspective a cheaper car can cost you more than initially more expensive competitor.</p>
+			<p>To check it, you may compare autos by fuel consumption in the city or on a highway, read consumer reviews and independent professional test-drives which are of great help too.</p>
+			<p>Design also matters for many people so you are invited to estimate exterior and interior of the car in our gallery of auto photos.</p>
+			<p>If you already possess a car and your iron horse needs quick maintenance or repair we will help you find and buy all the necessary auto supplies and accessories.
+			We are providing answers related car specifications. By the way, do you know the tire size for your vehicle? What kind of wheels fit your car? No problem. We’ll tell you then!</p>
+			<p>You just have to specify your make, model, trim and year of production to see what tires and wheels your car needs. And help you buy them right away!</p>
 		</section>
 		<!-- section 2 -->
 		<section class="options">
@@ -356,13 +368,13 @@
 		<section class="reviews">
 			<h2 class="section-name">Car reviews</h2>
 			<ul class="reviews__tabs">
-				<li class="is-active">
+				<li data-block="b1" class="is-active">
 					<a href="#">Expert reviews</a>
 				</li>
-				<li><a href="#">Video reviews</a></li>
-				<li><a href="#">Consumer reviews</a></li>
+				<li data-block="b2"><a href="#">Video reviews</a></li>
+				<li data-block="b3"><a href="#">Consumer reviews</a></li>
 			</ul>
-			<div class="reviews__container">
+			<div id="b1" class="reviews__container">
 				<div class="reviews__block">
 					<div class="reviews__image">
 						<a href="#"><img src="img/reviews.jpg"></a>
@@ -392,6 +404,61 @@
 				</div>
 				<a href="#" class="btn btn_reviews">More reviews</a>
 			</div>
+			<div id="b2" class="reviews__container" hidden="true">
+				<div class="reviews__block">
+					
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+					<p>The concept that wowed crowds at the 2009
+					Detroit auto show is now beautiful production
+					car.</p>
+				</div>
+				<div class="reviews__block">
+					<div class="reviews__image">
+						<a href="#"><img src="img/reviews.jpg"></a>
+					</div>
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+					<p>The concept that wowed crowds at the 2009
+					Detroit auto show is now beautiful production
+					car.</p>
+				</div>
+				<div class="reviews__block">
+					<div class="reviews__image">
+						<a href="#"><img src="img/reviews.jpg"></a>
+					</div>
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+					<p>The concept that wowed crowds at the 2009
+					Detroit auto show is now beautiful production
+					car.</p>
+				</div>
+				<a href="#" class="btn btn_reviews">More reviews</a>
+			</div>
+			<div id="b3" class="reviews__container" hidden="true">
+				<div class="reviews__block">
+					<div class="reviews__image">
+						<a href="#"><img src="img/reviews.jpg"></a>
+					</div>
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+					<p>The concept that wowed crowds at the 2009
+					Detroit auto show is now beautiful production
+					car.</p>
+				</div>
+				<div class="reviews__block">
+					<div class="reviews__image">
+						<a href="#"><img src="img/reviews.jpg"></a>
+					</div>
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+				</div>
+				<div class="reviews__block">
+					<div class="reviews__image">
+						<a href="#"><img src="img/reviews.jpg"></a>
+					</div>
+					<h3><a href="#">2014 Cadillac ELR</a></h3>
+					<p>The concept that wowed crowds at the 2009
+					Detroit auto show is now beautiful production
+					car.</p>
+				</div>
+				<a href="#" class="btn btn_reviews">More reviews</a>
+			</div>
 		</section>
 		<!-- section 6 -->
 		<section class="news">
@@ -399,12 +466,14 @@
 			<div class="news__container">
 				<ul class="news__list">
 					<li class="is-active">
-						<div class="news__image">
-							<a href="#"><img src="img/reviews.jpg"></a>
+						<div class="toggle-container">
+							<div class="news__image">
+								<a href="#"><img src="img/reviews.jpg"></a>
+							</div>
+							<p class="news__date">Jun 04th, 2014</p>
+							<h3><a href="#">2014 Cadillac ELR</a></h3>
+							<p>The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car. The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car. The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car.</p>
 						</div>
-						<p class="news__date">Jun 04th, 2014</p>
-						<h3><a href="#">2014 Cadillac ELR</a></h3>
-						<p>The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car. The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car. The concept that wowed crowds at the 2009 Detroit auto show is now beautiful production car.</p>
 					</li>
 					<li>
 						<p class="news__date">Jun 04th, 2014</p>

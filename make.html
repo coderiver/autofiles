@@ -19,7 +19,7 @@
 	<a href="#" class="join">Join</a>
 </header>
 <!-- BEGIN MENU -->
-<menu>
+<nav>
 	<ul class="menu-list">
 		<li class="is-active"><a href="#">Home</a></li>
 		<li><a href="#">All cars</a></li>
@@ -29,9 +29,9 @@
 		<li><a href="#">Media</a></li>
 		<li></li>
 	</ul>
-</menu>
+</nav>
 <!-- BEGIN MAIN -->
-<main class="l">
+<div class="l">
 	<div class="l-col1">
 		<!-- section 1 -->
 		<section class="make">
@@ -330,18 +330,48 @@
 		</div>
 		<section class="right-block">
 			<h2 class="section-name">Car specs and dimensions</h2>
-			<ul class="right-block__specs-list">
-				<li class="speed"><a href="#">0-60 times</a></li>
-				<li class="engine"><a href="#">Engine specs</a></li>
-				<li class="horsepower"><a href="#">Horsepower</a></li>
-				<li class="gas"><a href="#">Gas mileage</a></li>
-				<li class="towing"><a href="#">Towing capacity</a></li>
-				<li class="length"><a href="#">Length</a></li>
-				<li class="wheelbase"><a href="#">Wheelbase</a></li>
-				<li class="clearance"><a href="#">Clearance</a></li>
-				<li class="weight"><a href="#">Curb weight</a></li>
-				<li class="cargo"><a href="#">Cargo space</a></li>
-			</ul>
+			<table class="right-block__specs-list">
+				<tr>
+					<td><a class="speed" href="#">0-60 times</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="engine" href="#">Engine specs</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="horsepower" href="#">Horsepower</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="gas" href="#">Gas mileage</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="towing" href="#">Towing capacity</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="length" href="#">Length</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="wheelbase" href="#">Wheelbase</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="clearance" href="#">Clearance</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="weight" href="#">Curb weight</a></td>
+					<td class="spec-value"></td>
+				</tr>
+				<tr>
+					<td><a class="cargo" href="#">Cargo space</a></td>
+					<td class="spec-value"></td>
+				</tr>
+			</table>
 		</section>
 		<section class="right-block">
 			<h2 class="section-name">Acura wallpapers</h2>
@@ -360,7 +390,7 @@
 			</ul>
 		</section>
 	</div>
-</main>
+</div>
 <!-- BEGIN FOOTER -->
 <footer>
 	<section class="footer__info">

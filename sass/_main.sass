@@ -7,15 +7,38 @@
 	
 =bold
 	font-family: "helveticaneuecyr-bold", Arial, sans-serif
+	font-weight: normal
 
 $blue: #2fa4e7
 $darkblue: #2D7CAA
 $gray: #e3e3e3
+$orange: #ff5c28
 
 =borrad
 	-webkit-border-radius: 3px 
 	border-radius: 3px 
 
+// BREADCRUMB
+.breadcrumb
+	margin: 0 30px
+	line-height: 47px
+	border-bottom: 1px solid $gray
+	li
+		display: inline-block
+		vertical-align: middle
+		margin-right: 3px 
+		a
+			+fs(12)
+			text-decoration: underline
+		span
+			margin-left: 5px 
+		&:last-child, &.is-active
+			a
+				color: #CCC
+				text-decoration: none
+				cursor: default
+			span
+				display: none
 
 // LEFT COLUMN
 .section-name
@@ -23,6 +46,11 @@ $gray: #e3e3e3
 	+fs(18)
 	color: $blue
 
+.section-name_regular
+	font-family: Arial
+	font-weight: normal 
+
+// SECTION ALL MAKES
 .all-makes 
 	margin-top: 35px
 	+clr
@@ -46,6 +74,7 @@ $gray: #e3e3e3
 	p
 		margin-bottom: 1em 
 
+// SECTION OPTIONS
 .options
 	margin-top: 35px 
 	.options__block
@@ -80,6 +109,7 @@ $gray: #e3e3e3
 			margin: 10px 0
 			top: 0 
 
+// SECTION PARTS AND ACCESSORIES
 .parts
 	margin-top: 45px
 	padding-bottom: 40px 
@@ -118,7 +148,8 @@ $gray: #e3e3e3
 		width: 31px 
 		height: 22px
 		margin-left: 8px 
-		
+
+// SECTION MOST VISITED		
 .most-visited
 	margin-top: 45px
 	caption
@@ -134,9 +165,8 @@ $gray: #e3e3e3
 	text-align: center
 	img
 		max-width: 100% 
-	// width: 100% 
-	// height: 90px
 	
+// SECTION REVIEWS
 .reviews
 	margin-top: 45px
 	
@@ -218,7 +248,8 @@ $gray: #e3e3e3
 		margin: 10px 10px
 		font-family: Arial
 		font-weight: bold
-		
+
+// SECTION NEWS	
 .news
 	margin-top: 45px
 	.news__container
@@ -266,7 +297,8 @@ $gray: #e3e3e3
 		margin-top: 25px
 		font-family: Arial
 		font-weight: bold
-	
+
+// SECTION MAKE	
 .make
 	margin-top: 35px
 	+clr
@@ -293,7 +325,7 @@ $gray: #e3e3e3
 			+borrad
 			+clr
 			&:last-child
-				margin-bottom: 0 
+				margin-bottom: 0
 
 	.make__vehicle-image
 		float: left
@@ -328,17 +360,32 @@ $gray: #e3e3e3
 			margin-right: 5px  
 			a
 				text-decoration: underline
-				
+
+// SECTION MODEL COMPETITORS				
+.make_competitors
+	margin-top: 45px 
+
+	.make__vehicle
+		margin-top: 35px
+	
+	.compare
+		text-decoration: underline
+		color: $blue
+		display: inline-block
+		margin-top: 10px 
+	
+// SECTION MODEL			
 .model
 	margin-top: 35px
+	
+	h3
+		color: $blue
 	
 	.model__about
 		margin-top: 29px 
 		margin-bottom: 42px
 		line-height: 1.2
 	
-	h3
-		color: $blue
 		
 	.model__specs
 		margin-top: 15px
@@ -360,42 +407,45 @@ $gray: #e3e3e3
 			width: 33.33%
 			line-height: 2 
 			
-	.model__block-box
-		margin-right: -17px 
+.model__block-box
+	margin-right: -21px
+	font-size: 0
+	
+.model__block
+	cursor: pointer
+	display: inline-block
+	vertical-align: top
+	padding-top: 40px 
+	border: 1px solid $gray
+	+borrad
+	+box
+	width: 158px
+	height: 158px
+	margin-right: 20px
+	margin-top: 20px  
+	position: relative
+	text-align: center
+	overflow: hidden
+	font-size: 0
+	&:hover
+		color: #4d4d4d
+		// +transform(scale(1.05))
+		-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2) 
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+		+transition(0.2s linear)
+		  
+	span
+		+fs(18)
+		font-weight: bold
+		position: absolute
+		top: 15px
+		left: 50%
+		margin-left: -20px
 		
-	.model__block
-		display: inline-block
-		padding-top: 40px 
-		border: 1px solid $gray
-		+borrad
-		+box
-		width: 158px
-		height: 158px
-		margin-right: 17px
-		margin-top: 16px  
-		position: relative
-		text-align: center
-		overflow: hidden
-		font-size: 0
-		&:hover
-			color: #4d4d4d
-			// +transform(scale(1.05))
-			-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2) 
-			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
-			+transition(0.2s linear)
-			  
-		span
-			+fs(18)
-			font-weight: bold
-			position: absolute
-			top: 15px
-			left: 50%
-			margin-left: -20px
-			
-		img
-			max-width: 100%
-			max-width: 100%
-			
+	img
+		max-width: 100%
+		
+// SECTION ALL MODELS on page model.html
 .all-models
 	margin-top: 40px
 	p
@@ -406,6 +456,214 @@ $gray: #e3e3e3
 
 .all-models + .all-makes
 	margin-top: 45px 
+
+// SECTION MODEL of some model year
+.model-year
+	margin-top: 35px
+	h3
+		color: $blue
+	
+	.model-year__box
+		margin-top: 32px
+		+clr
+
+	.model-year__box-left
+		float: left
+		width: 270px/870px*100%
+	
+	.model-year__image
+		font-size: 0
+		img
+			max-width: 100% 
+			
+	.model-year__links 
+		li
+			display: inline-block
+			margin-right: 20px
+			&:last-child
+				margin-right: 0 
+			a
+				color: $blue
+				text-decoration: underline
+	
+	.model-year__image + .model-year__links
+		margin-top: 5px 
+
+	.model-year__box-right
+		margin-left: 312px/870px*100%
+		table
+			margin-top: 13px
+			margin-bottom: 18px  
+		
+	.model-year__trim-levels
+		line-height: 2
+		
+	.model-year__cost
+		text-align: right 
+		line-height: 2
+		color: $orange
+		white-space: nowrap
+		padding-left: 10px 
+		
+	.model-year__years
+		margin-top: 22px
+		margin-bottom: 4px 
+		li
+			display: inline-block
+			font-weight: bold
+			margin-right: 5px
+			&:last-child
+				margin-right: -4px
+			&.is-active
+				a
+					color: #cccccc
+					font-weight: normal
+					cursor: default
+
+// SECTION ALL MODELS on page modelyear.html
+.model__block_all-models
+	height: 198px
+	padding-top: 0
+	padding-bottom: 80px
+	
+	.model__block-name
+		position: absolute
+		bottom: 31px
+		left: 0
+		right: 0
+		height: 42px
+		line-height: 42px
+		h3
+			display: inline-block
+			vertical-align: middle
+			+fs(12)
+			line-height: 1.2 
+			color: $blue
+			padding: 0 7px
+			vertical-align: middle
+	
+	.model__block-cost
+		top: auto
+		left: 0
+		right: 0
+		bottom: 7px
+		margin: 0
+		padding: 0 5px
+		text-align: center
+		color: $orange
+		+fs(12)
+
+.model__block-box_all-models
+	margin-top: 15px
+		 
+// SECTION WRITE REVIEW form
+.write-review
+	margin-top: 50px
+	border-top: 1px solid $gray
+	padding-top: 44px
+	
+	.btn_submit 
+		padding: 5px 10px
+		margin-top: 20px
+
+.write-review__text
+	textarea
+		width: 100%
+		font: normal 12px Arial
+		color: #4d4d4d
+		padding: 15px
+		border: 1px solid $gray
+		margin-top: 35px
+		background: #FFF
+		line-height: 1.4 
+		+box
+		+borrad
+
+.write-review__col
+	width: 300px
+	padding: 0 1px
+	margin-top: 18px
+	
+.write-review__checkbox
+	input
+		display: inline-block
+		vertical-align: baseline
+
+.write-review__user-name, .write-review__user-email
+	position: relative
+	& >input
+		width: 100%
+		border: 1px solid $gray
+		padding: 6px
+		padding-left: 38px
+		border: 1px solid $gray
+		color: #4d4d4d
+		background: #FFF
+		font-family: Arial 
+		+box
+		+borrad
+	span
+		display: inline-block
+		position: absolute
+		top: 0
+		left: 0
+		width: 26px
+		height: 29.5px 
+		line-height: 28px
+		background: #f3f1f1
+		text-align: center
+		border: 1px solid $gray
+		+box
+		-webkit-border-top-left-radius: 3px 
+		border-top-left-radius: 3px
+		-webkit-border-bottom-left-radius: 3px 
+		border-bottom-left-radius: 3px
+					
+.write-review__user-name
+	margin-top: 16px
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(icon-user)
+.write-review__user-email
+	margin-top: 10px 
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(icon-email)
+
+.write-review__captcha
+	margin-top: 20px 
+	+clr 
+
+.write-review__captcha-image
+	float: left
+	width: 158px
+	height: 48px 
+	border: 1px solid $gray
+	+borrad
+	overflow: hidden
+	img
+		max-width: 100%
+
+.write-review__captcha-input
+	float: right
+	input
+		display: inline-block
+		width: 128px
+		border
+		border: 1px solid $gray
+		+borrad
+		padding: 6px
+		+box
+		background: #FFF
+		color: #4d4d4d 
+		
+.write-review__captcha-reload
+	display: block
+	color: $blue
+	text-decoration: underline
+	margin-top: 3px 
 
 
 // RIGHT COLUMN
@@ -421,7 +679,7 @@ $gray: #e3e3e3
 
 .right-block
 	margin-bottom: 40px 
-	padding: 14px 20px 
+	padding: 14px 6.66666% 
 	border: 1px solid $gray
 	+borrad
 	&:last-child
@@ -429,53 +687,98 @@ $gray: #e3e3e3
 
 .right-block__specs-list
 	margin-top: 20px
-	li
-		padding-left: 69px 
+	td a
+		// padding-left: 26.74418%
+		padding-left: 55px 
 		line-height: 3
 		position: relative
 		&:before
 			content: ""
 			position: absolute
+	// .speed:before
+	// 	+s(speed)
+	// 	left: 8px
+	// 	top: 3px
+	// .engine:before
+	// 	+s(engine)
+	// 	left: 4px
+	// 	top: 3px
+	// .horsepower:before
+	// 	+s(horsepower)
+	// 	left: 4px
+	// 	top: 6px
+	// .gas:before
+	// 	+s(gas)
+	// 	left: 10px
+	// 	top: 7px
+	// .towing:before
+	// 	+s(towing)
+	// 	left: 4px
+	// 	top: 3px
+	// .length:before
+	// 	+s(length)
+	// 	left: 9px
+	// 	top: 3px
+	// .wheelbase:before
+	// 	+s(wheelbase)
+	// 	left: -1px
+	// 	top: 4px
+	// .clearance:before
+	// 	+s(clearance)
+	// 	left: 4px
+	// 	top: -3px
+	// .weight:before
+	// 	+s(weight)
+	// 	left: 8px
+	// 	top: 1px
+	// .cargo:before
+	// 	+s(cargo)
+	// 	left: 2px
+	// 	top: -6px	
 	.speed:before
 		+s(speed)
 		left: 8px
-		top: 3px
+		top: -6px
 	.engine:before
 		+s(engine)
 		left: 4px
-		top: 3px
+		top: -9px
 	.horsepower:before
 		+s(horsepower)
 		left: 4px
-		top: 6px
+		top: -7px
 	.gas:before
 		+s(gas)
 		left: 10px
-		top: 7px
+		top: -5px
 	.towing:before
 		+s(towing)
 		left: 4px
-		top: 3px
+		top: -8px
 	.length:before
 		+s(length)
 		left: 9px
-		top: 3px
+		top: -8px
 	.wheelbase:before
 		+s(wheelbase)
 		left: -1px
-		top: 4px
+		top: -5px
 	.clearance:before
 		+s(clearance)
 		left: 4px
-		top: -3px
+		top: -13px
 	.weight:before
 		+s(weight)
 		left: 8px
-		top: 1px
+		top: -9px
 	.cargo:before
 		+s(cargo)
 		left: 2px
-		top: -6px	
+		top: -16px
+		
+	.spec-value
+		text-align: left
+		color: $orange 
 
 .right-block__image
 	display: inline-block
@@ -517,7 +820,8 @@ $gray: #e3e3e3
 		width: 40px
 		color: #4d4d4d
 		padding: 2px
-		margin-left: 7px 
+		margin-left: 7px
+		background: #FFF 
 	button
 		float: right
 		line-height: 2.15

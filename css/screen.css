@@ -187,7 +187,7 @@ header:after { content: " "; display: table; clear: both; }
 
 .model__block-box { margin-right: -21px; font-size: 0; }
 
-.model__block { cursor: pointer; display: inline-block; vertical-align: top; padding-top: 40px; border: 1px solid #e3e3e3; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 158px; height: 158px; margin-right: 20px; margin-top: 20px; position: relative; text-align: center; overflow: hidden; font-size: 0; }
+.model__block { text-decoration: none; font-size: 0; display: inline-block; vertical-align: top; padding-top: 40px; border: 1px solid #e3e3e3; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 158px; height: 158px; margin-right: 20px; margin-top: 20px; position: relative; text-align: center; overflow: hidden; }
 .model__block:hover { color: #4d4d4d; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); -webkit-transition: 0.2s linear; -moz-transition: 0.2s linear; -o-transition: 0.2s linear; transition: 0.2s linear; }
 .model__block span { font-size: 18px; font-size: 1.8rem; font-weight: bold; position: absolute; top: 15px; left: 50%; margin-left: -20px; }
 .model__block img { max-width: 100%; }

@@ -760,16 +760,108 @@ $orange: #ff5c28
 	&:last-child
 		margin-bottom: 0 
 
+// .right-block__specs-list
+// 	margin-top: 20px
+// 	td
+// 		a
+// 			// padding-left: 26.74418%
+// 			padding-left: 55px 
+// 			line-height: 3
+// 			position: relative
+// 			&:before
+// 				content: ""
+// 				position: absolute
+				
+// .right-block__specs-list
+// 	td
+// 		vertical-align: middle
+// 		height: 36px
+// 		padding-left: 3px 
+// 	.icon
+// 		text-align: center
+// 		font-size: 0
+// 		i
+// 			content: ""
+// 			display: inline-block
+// 	.speed
+// 		+s(speed)
+// 	.engine
+// 		+s(engine)
+// 	.horsepower
+// 		+s(horsepower)
+// 	.gas
+// 		+s(gas)
+// 	.towing
+// 		+s(towing)
+// 	.length
+// 		+s(length)
+// 	.wheelbase
+// 		+s(wheelbase)
+// 	.clearance
+// 		+s(clearance1)
+// 	.weight
+// 		+s(weight)
+// 	.cargo
+// 		+s(cargo1)
+
 .right-block__specs-list
 	margin-top: 20px
-	td a
-		// padding-left: 26.74418%
-		padding-left: 55px 
-		line-height: 3
-		position: relative
-		&:before
-			content: ""
-			position: absolute
+	li
+		white-space: nowrap
+		line-height: 35px
+		div
+			display: inline-block
+			vertical-align: middle 
+			white-space: normal
+			line-height: 1.4
+			
+	.icon
+		display: inline-block
+		width: 48px
+		margin-right: 5% 
+		text-align: center
+		font-size: 0
+		+r1090
+			margin-right: 0
+		+r980
+			margin-right: 5% 
+		i
+			display: inline-block
+			vertical-align: middle
+	.speed
+		+s(speed)
+	.engine
+		+s(engine)
+	.horsepower
+		+s(horsepower)
+	.gas
+		+s(gas)
+	.towing
+		+s(towing)
+	.length
+		+s(length)
+	.wheelbase
+		+s(wheelbase)
+	.clearance
+		+s(clearance)
+	.weight
+		+s(weight)
+	.cargo
+		+s(cargo)
+
+	.spec
+		width: 35%
+		margin-right: 5%
+		+r1090
+			margin-right: 3px
+		+r980
+			margin-right: 5% 
+
+	
+	.spec-value
+		color: $orange
+		width: 35%  
+		 
 	// .speed:before
 	// 	+s(speed)
 	// 	left: 8px
@@ -810,50 +902,47 @@ $orange: #ff5c28
 	// 	+s(cargo)
 	// 	left: 2px
 	// 	top: -6px	
-	.speed:before
-		+s(speed)
-		left: 6px
-		top: -11px
-	.engine:before
-		+s(engine)
-		left: 4px
-		top: -9px
-	.horsepower:before
-		+s(horsepower)
-		left: 4px
-		top: -7px
-	.gas:before
-		+s(gas)
-		left: 10px
-		top: -5px
-	.towing:before
-		+s(towing)
-		left: 4px
-		top: -8px
-	.length:before
-		+s(length)
-		left: 9px
-		top: -8px
-	.wheelbase:before
-		+s(wheelbase)
-		left: -1px
-		top: -5px
-	.clearance:before
-		+s(clearance)
-		left: 4px
-		top: -13px
-	.weight:before
-		+s(weight)
-		left: 8px
-		top: -9px
-	.cargo:before
-		+s(cargo)
-		left: 2px
-		top: -16px
-		
-	.spec-value
-		text-align: left
-		color: $orange 
+	
+	// .speed:before
+	// 	+s(speed)
+	// 	left: 6px
+	// 	top: -11px
+	// .engine:before
+	// 	+s(engine)
+	// 	left: 4px
+	// 	top: -9px
+	// .horsepower:before
+	// 	+s(horsepower)
+	// 	left: 4px
+	// 	top: -7px
+	// .gas:before
+	// 	+s(gas)
+	// 	left: 10px
+	// 	top: -5px
+	// .towing:before
+	// 	+s(towing)
+	// 	left: 4px
+	// 	top: -8px
+	// .length:before
+	// 	+s(length)
+	// 	left: 9px
+	// 	top: -8px
+	// .wheelbase:before
+	// 	+s(wheelbase)
+	// 	left: -1px
+	// 	top: -5px
+	// .clearance:before
+	// 	+s(clearance)
+	// 	left: 4px
+	// 	top: -13px
+	// .weight:before
+	// 	+s(weight)
+	// 	left: 8px
+	// 	top: -9px
+	// .cargo:before
+	// 	+s(cargo)
+	// 	left: 2px
+	// 	top: -16px
 
 .right-block__image
 	display: inline-block
